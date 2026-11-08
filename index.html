@@ -1,448 +1,378 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>제23차 차세대리더십캠프 참가신청서</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts Noto Sans KR -->
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        navy: {
-                            50: '#f0f4f9',
-                            100: '#d9e2ec',
-                            500: '#334e68',
-                            800: '#102a43',
-                            900: '#0b1b2b',
-                        },
-                        amberGold: '#f59e0b',
-                    },
-                    fontFamily: {
-                        sans: ['Noto Sans KR', 'sans-serif'],
-                    }
-                }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>제23차 차세대리더십캠프 참가신청서</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts Noto Sans KR -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              50: '#f0f4f9',
+              100: '#d9e2ec',
+              500: '#334e68',
+              800: '#102a43',
+              900: '#0b1b2b',
+            },
+            amberGold: '#f59e0b',
+          },
+          fontFamily: {
+            sans: ['Noto Sans KR', 'sans-serif'],
+          }
         }
-    </script>
-    <style>
-        body {
-            font-family: 'Noto Sans KR', sans-serif;
-            -webkit-tap-highlight-color: transparent;
-        }
-        /* Mobile Active Effects */
-        .btn-active:active {
-            transform: scale(0.97);
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Noto Sans KR', sans-serif; -webkit-tap-highlight-color: transparent; }
+    input[type="date"]::-webkit-calendar-picker-indicator { cursor: pointer; }
+  </style>
 </head>
-<body class="bg-slate-100 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+<body class="bg-slate-100 text-slate-800 antialiased min-h-screen pb-12">
 
-    <!-- Header / Hero Section (Mobile Optimized) -->
-    <header class="bg-gradient-to-br from-slate-900 via-slate-800 to-navy-900 text-white relative overflow-hidden pb-12 pt-8 px-5 rounded-b-3xl shadow-lg">
-        <!-- Background Pattern Decor -->
-        <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
-        <div class="absolute -left-10 -top-10 w-40 h-40 bg-blue-500/10 rounded-full blur-2xl pointer-events-none"></div>
-
-        <div class="max-w-md mx-auto text-center space-y-4">
-            <!-- Badge -->
-            <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs px-3.5 py-1.5 rounded-full font-medium">
-                <i class="fa-solid fa-users"></i>
-                <span>선착순 80명 모집</span>
-            </div>
-
-            <!-- Main Title & Theme -->
-            <div class="space-y-1">
-                <p class="text-slate-400 text-xs font-semibold tracking-wider uppercase">2026 NEXT GENERATION LEADERSHIP CAMP</p>
-                <h1 class="text-2xl sm:text-3xl font-black text-white tracking-tight">
-                    제23차 차세대리더십캠프
-                </h1>
-            </div>
-
-            <!-- Theme Highlight Box -->
-            <div class="bg-white/10 backdrop-blur-md border border-white/15 rounded-2xl p-4 my-3 text-center space-y-1">
-                <div class="text-amber-400 font-extrabold text-xl tracking-wide">
-                    주제 : "오라! COME!"
-                </div>
-                <p class="text-slate-200 text-xs sm:text-sm font-light italic">
-                    "그리고 와서 나를 따르라 하시니" [막 10:21]
-                </p>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main Container -->
-    <main class="max-w-md w-full mx-auto px-4 -mt-6 z-10 space-y-5 mb-12">
-
-        <!-- 1. Camp Information Card -->
-        <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 space-y-4">
-            <h2 class="text-base font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-3">
-                <i class="fa-solid fa-circle-info text-amber-500"></i>
-                캠프 안내 사항
-            </h2>
-
-            <div class="space-y-3 text-xs sm:text-sm">
-                <!-- Date -->
-                <div class="flex items-start gap-3">
-                    <div class="w-7 h-7 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center shrink-0 mt-0.5">
-                        <i class="fa-regular fa-calendar-days text-sm"></i>
-                    </div>
-                    <div>
-                        <div class="text-slate-500 text-xs">일시</div>
-                        <div class="font-bold text-slate-800">1월 11일(월) ~ 1월 13일(수)</div>
-                    </div>
-                </div>
-
-                <!-- Location & Address -->
-                <div class="flex items-start gap-3">
-                    <div class="w-7 h-7 rounded-lg bg-slate-100 text-slate-600 flex items-center justify-center shrink-0 mt-0.5">
-                        <i class="fa-solid fa-location-dot text-sm"></i>
-                    </div>
-                    <div class="flex-grow">
-                        <div class="text-slate-500 text-xs">장소</div>
-                        <div class="font-bold text-slate-800">동신 기도원</div>
-                        <div class="text-slate-600 text-xs mt-0.5 flex items-center justify-between gap-1 bg-slate-50 p-2 rounded-lg border border-slate-100">
-                            <span id="campAddress" class="break-all">경기도 양주시 은현면 화합로 1094번길 232</span>
-                            <button type="button" onclick="copyAddress()" class="shrink-0 text-amber-600 hover:text-amber-700 font-bold text-xs bg-amber-50 border border-amber-200 px-2 py-1 rounded active:bg-amber-100">
-                                <i class="fa-regular fa-copy"></i> 복사
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Capacity & Fee -->
-                <div class="grid grid-cols-2 gap-2 pt-1">
-                    <div class="bg-amber-50/60 border border-amber-100 p-2.5 rounded-xl text-center">
-                        <div class="text-slate-500 text-xs">모집 인원</div>
-                        <div class="font-bold text-amber-700 text-sm">선착순 80명</div>
-                    </div>
-                    <div class="bg-slate-50 border border-slate-100 p-2.5 rounded-xl text-center">
-                        <div class="text-slate-500 text-xs">참가비</div>
-                        <div class="font-bold text-slate-700 text-sm">추후 공지 (대기)</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 2. Form Section -->
-        <form id="campRegistrationForm" onsubmit="handleFormSubmit(event)" class="space-y-5">
-            
-            <!-- Participant Info Box -->
-            <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 space-y-4">
-                <h2 class="text-base font-bold text-slate-900 flex items-center gap-2 border-b border-slate-100 pb-3">
-                    <i class="fa-solid fa-user-pen text-amber-500"></i>
-                    참가자 정보 입력
-                </h2>
-
-                <div class="space-y-4">
-                    <!-- 이름 -->
-                    <div>
-                        <label for="userName" class="block text-xs font-bold text-slate-700 mb-1">
-                            1. 참가자 이름 <span class="text-rose-500">*</span>
-                        </label>
-                        <input type="text" id="userName" required placeholder="이름을 입력하세요"
-                               class="w-full px-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none text-sm transition bg-slate-50/50 focus:bg-white">
-                    </div>
-
-                    <!-- 생년월일 (셀 정렬을 위한 YYYY-MM-DD 입력 방식) -->
-                    <div>
-                        <label for="userBirth" class="block text-xs font-bold text-slate-700 mb-1">
-                            2. 참가자 생년월일 <span class="text-rose-500">*</span>
-                            <span class="text-[11px] font-normal text-slate-400 block sm:inline">(명단 정렬을 위해 정확히 선택해 주세요)</span>
-                        </label>
-                        <input type="date" id="userBirth" required
-                               class="w-full px-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none text-sm transition bg-slate-50/50 focus:bg-white">
-                    </div>
-
-                    <!-- 성별 -->
-                    <div>
-                        <label class="block text-xs font-bold text-slate-700 mb-1.5">
-                            3. 성별 <span class="text-rose-500">*</span>
-                        </label>
-                        <div class="grid grid-cols-2 gap-3">
-                            <label class="flex items-center justify-center gap-2 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-semibold text-slate-700 has-[:checked]:bg-amber-500 has-[:checked]:text-white has-[:checked]:border-amber-500 transition">
-                                <input type="radio" name="gender" value="남" required class="hidden">
-                                <i class="fa-solid fa-mars"></i> 남성
-                            </label>
-                            <label class="flex items-center justify-center gap-2 p-3 rounded-xl border border-slate-200 cursor-pointer text-sm font-semibold text-slate-700 has-[:checked]:bg-amber-500 has-[:checked]:text-white has-[:checked]:border-amber-500 transition">
-                                <input type="radio" name="gender" value="여" required class="hidden">
-                                <i class="fa-solid fa-venus"></i> 여성
-                            </label>
-                        </div>
-                    </div>
-
-                    <!-- 휴대전화번호 -->
-                    <div>
-                        <label for="userPhone" class="block text-xs font-bold text-slate-700 mb-1">
-                            4. 휴대전화번호 <span class="text-rose-500">*</span>
-                        </label>
-                        <input type="tel" id="userPhone" required placeholder="010-0000-0000" maxlength="13"
-                               class="w-full px-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none text-sm transition bg-slate-50/50 focus:bg-white">
-                    </div>
-
-                    <!-- 소속 교회 -->
-                    <div>
-                        <label for="userChurch" class="block text-xs font-bold text-slate-700 mb-1">
-                            5. 소속 교회 <span class="text-rose-500">*</span>
-                        </label>
-                        <input type="text" id="userChurch" required placeholder="예: 동신교회"
-                               class="w-full px-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none text-sm transition bg-slate-50/50 focus:bg-white">
-                    </div>
-
-                    <!-- 교단 -->
-                    <div>
-                        <label for="userDenomination" class="block text-xs font-bold text-slate-700 mb-1">
-                            6. 교단 <span class="text-rose-500">*</span>
-                        </label>
-                        <input type="text" id="userDenomination" required placeholder="예: 합동, 통합, 감리, 백석 등"
-                               class="w-full px-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none text-sm transition bg-slate-50/50 focus:bg-white">
-                    </div>
-
-                    <!-- 직분 -->
-                    <div>
-                        <label for="userRole" class="block text-xs font-bold text-slate-700 mb-1">
-                            7. 직분 <span class="text-rose-500">*</span>
-                        </label>
-                        <select id="userRole" required
-                                class="w-full px-3.5 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-amber-500 focus:border-amber-500 outline-none text-sm transition bg-white text-slate-800">
-                            <option value="">직분을 선택해주세요</option>
-                            <option value="학생">학생 (중·고등부)</option>
-                            <option value="청년">청년 / 대학생</option>
-                            <option value="임원">부서 임원</option>
-                            <option value="교사">교사</option>
-                            <option value="사역자">사역자 (전도사/목사)</option>
-                            <option value="기타">기타</option>
-                        </select>
-                    </div>
-                </div>
-            </section>
-
-            <!-- 3. Terms & Agreement Card -->
-            <section class="bg-white rounded-2xl shadow-sm border border-slate-200/80 p-5 space-y-3">
-                <h2 class="text-base font-bold text-slate-900 flex items-center justify-between border-b border-slate-100 pb-3">
-                    <span class="flex items-center gap-2">
-                        <i class="fa-solid fa-file-contract text-amber-500"></i>
-                        약관 동의
-                    </span>
-                    <span class="text-xs text-rose-500 font-normal">* 전체 필수</span>
-                </h2>
-
-                <!-- Select All Checkbox -->
-                <div class="p-3 bg-slate-100/80 rounded-xl border border-slate-200 flex items-center gap-2">
-                    <input type="checkbox" id="checkAll" onchange="toggleAllTerms(this)" class="w-4 h-4 rounded text-amber-600 focus:ring-amber-500">
-                    <label for="checkAll" class="text-xs font-bold text-slate-800 cursor-pointer">
-                        약관 전체 동의하기
-                    </label>
-                </div>
-
-                <div class="space-y-2.5 pt-1">
-                    <!-- Term 1 -->
-                    <div class="p-3 border border-slate-100 rounded-xl bg-slate-50/50 space-y-1.5">
-                        <label class="flex items-start gap-2 cursor-pointer">
-                            <input type="checkbox" name="terms" id="term1" required onchange="updateAllCheckState()" class="w-4 h-4 rounded text-amber-600 focus:ring-amber-500 mt-0.5">
-                            <span class="text-xs font-semibold text-slate-700">[필수] 등록 및 회비 정보 동의</span>
-                        </label>
-                        <p class="text-[11px] text-slate-500 pl-6 leading-tight">
-                            참가 등록 정보 확인 및 회비 관련(추후 공지) 안내를 위한 연락에 동의합니다.
-                        </p>
-                    </div>
-
-                    <!-- Term 2 -->
-                    <div class="p-3 border border-slate-100 rounded-xl bg-slate-50/50 space-y-1.5">
-                        <label class="flex items-start gap-2 cursor-pointer">
-                            <input type="checkbox" name="terms" id="term2" required onchange="updateAllCheckState()" class="w-4 h-4 rounded text-amber-600 focus:ring-amber-500 mt-0.5">
-                            <span class="text-xs font-semibold text-slate-700">[필수] 환불 규정 동의</span>
-                        </label>
-                        <p class="text-[11px] text-slate-500 pl-6 leading-tight">
-                            캠프 준비 및 숙식 예약을 위해 개회 3일 전 취소 시 환불 기준이 적용됨에 동의합니다.
-                        </p>
-                    </div>
-
-                    <!-- Term 3 -->
-                    <div class="p-3 border border-slate-100 rounded-xl bg-slate-50/50 space-y-1.5">
-                        <label class="flex items-start gap-2 cursor-pointer">
-                            <input type="checkbox" name="terms" id="term3" required onchange="updateAllCheckState()" class="w-4 h-4 rounded text-amber-600 focus:ring-amber-500 mt-0.5">
-                            <span class="text-xs font-semibold text-slate-700">[필수] 개인정보 수집 및 이용 동의</span>
-                        </label>
-                        <p class="text-[11px] text-slate-500 pl-6 leading-tight">
-                            수집된 개인정보(이름, 생년월일, 연락처, 소속)는 캠프 운영 및 비상 연락용으로만 사용되며 행사 종료 후 파기됩니다.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Submit Button (Sticky style feel for mobile) -->
-            <div class="pt-2">
-                <button type="submit"
-                        class="btn-active w-full py-4 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-extrabold text-base rounded-2xl shadow-lg shadow-amber-500/25 transition-all">
-                    <i class="fa-solid fa-paper-plane mr-1.5"></i> 참가 신청서 제출하기
-                </button>
-            </div>
-        </form>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-slate-900 text-slate-400 py-6 px-4 text-center text-xs space-y-1 border-t border-slate-800">
-        <p class="font-medium text-slate-300">제23차 차세대리더십캠프 운영위원회</p>
-        <p class="text-slate-500">장소 : 동신 기도원 (양주시 은현면 화합로 1094번길 232)</p>
-    </footer>
-
-    <!-- Toast Notification for Address Copy -->
-    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-slate-900/90 text-white text-xs px-4 py-2.5 rounded-full shadow-lg backdrop-blur-sm opacity-0 pointer-events-none transition-all duration-300 z-50 flex items-center gap-2">
-        <i class="fa-solid fa-check text-amber-400"></i>
-        <span id="toastMsg">주소가 복사되었습니다.</span>
+  <!-- Header Section -->
+  <header class="bg-gradient-to-r from-navy-900 via-navy-800 to-slate-900 text-white pt-8 pb-10 px-4 rounded-b-3xl shadow-lg relative overflow-hidden">
+    <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/10 rounded-full blur-2xl pointer-events-none"></div>
+    <div class="max-w-md mx-auto text-center relative z-10">
+      <div class="inline-block px-3 py-1 bg-amber-500/20 text-amber-300 text-xs font-semibold rounded-full mb-2 tracking-wide uppercase">
+        Registration Open
+      </div>
+      <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight mb-1 text-white">
+        제23차 차세대리더십캠프
+      </h1>
+      <p class="text-amber-400 font-bold text-xl mb-3 tracking-wide">
+        "오라! COME!"
+      </p>
+      <div class="bg-white/10 backdrop-blur-md rounded-lg py-2 px-4 inline-block text-xs sm:text-sm text-slate-200 border border-white/10">
+        <i class="fa-solid fa-quote-left text-amber-400 mr-1"></i>
+        그리고 와서 나를 따르라 하시니 <span class="text-amber-300 font-semibold">[막10:21]</span>
+        <i class="fa-solid fa-quote-right text-amber-400 ml-1"></i>
+      </div>
     </div>
+  </header>
 
-    <!-- Complete Modal -->
-    <div id="completeModal" class="fixed inset-0 bg-slate-900/70 backdrop-blur-sm flex items-center justify-center p-4 z-50 hidden opacity-0 transition-opacity duration-300">
-        <div class="bg-white rounded-3xl max-w-xs sm:max-w-sm w-full p-6 shadow-2xl space-y-5 text-center transform scale-95 transition-transform duration-300" id="modalContainer">
-            
-            <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center mx-auto text-2xl">
-                <i class="fa-solid fa-circle-check"></i>
-            </div>
+  <main class="max-w-md mx-auto px-4 -mt-6 relative z-20 space-y-5">
 
-            <div class="space-y-1">
-                <h3 class="text-xl font-extrabold text-slate-900">신청이 완료되었습니다!</h3>
-                <p class="text-xs text-slate-500">차세대리더십캠프 신청 내역입니다.</p>
-            </div>
-
-            <!-- Receipt Card -->
-            <div id="summaryContent" class="bg-slate-50 rounded-2xl p-4 border border-slate-200/80 text-left text-xs space-y-2">
-                <!-- Dynamically Filled -->
-            </div>
-
-            <button type="button" onclick="closeModal()" class="btn-active w-full py-3 bg-slate-900 text-white font-bold text-sm rounded-xl hover:bg-slate-800 transition">
-                확인
+    <!-- Camp Information Card -->
+    <section class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80">
+      <h2 class="text-base font-bold text-navy-800 mb-3 flex items-center border-b border-slate-100 pb-2">
+        <i class="fa-solid fa-circle-info text-amber-500 mr-2"></i> 캠프 개요 안내
+      </h2>
+      <div class="space-y-3 text-sm">
+        <div class="flex items-start">
+          <div class="w-20 text-slate-400 font-medium shrink-0 flex items-center">
+            <i class="fa-regular fa-calendar mr-1.5 text-slate-400"></i> 일시
+          </div>
+          <div class="text-slate-800 font-semibold">1월 11일(월) ~ 1월 13일(수)</div>
+        </div>
+        <div class="flex items-start">
+          <div class="w-20 text-slate-400 font-medium shrink-0 flex items-center">
+            <i class="fa-solid fa-location-dot mr-1.5 text-slate-400"></i> 장소
+          </div>
+          <div class="text-slate-800 font-semibold">동신 기도원</div>
+        </div>
+        <div class="flex items-start">
+          <div class="w-20 text-slate-400 font-medium shrink-0 flex items-center">
+            <i class="fa-solid fa-map-pin mr-1.5 text-slate-400"></i> 주소
+          </div>
+          <div class="text-slate-700 flex-1">
+            경기도 양주시 은현면 화합로 1094번길 232
+            <button type="button" onclick="copyAddress()" class="ml-1 text-xs text-navy-500 underline font-medium active:text-navy-800">
+              [주소복사]
             </button>
+          </div>
         </div>
+        <div class="flex items-center justify-between bg-amber-50 rounded-xl p-3 border border-amber-100 mt-2">
+          <div class="flex items-center text-amber-900 font-medium text-xs sm:text-sm">
+            <i class="fa-solid fa-users text-amber-500 mr-2"></i> 모집 인원
+          </div>
+          <div class="text-amber-900 font-bold text-xs sm:text-sm">
+            선착순 <span class="text-amber-600 text-base">80명</span>
+          </div>
+        </div>
+        <div class="flex items-center justify-between bg-slate-50 rounded-xl p-3 border border-slate-200/60">
+          <div class="flex items-center text-slate-600 font-medium text-xs sm:text-sm">
+            <i class="fa-solid fa-receipt text-slate-400 mr-2"></i> 참가비
+          </div>
+          <div class="text-slate-500 font-medium text-xs sm:text-sm">
+            추후 공지 (대기)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <form id="campRegistrationForm" onsubmit="handleFormSubmit(event)" class="bg-white rounded-2xl p-5 shadow-sm border border-slate-200/80 space-y-5">
+      <h2 class="text-base font-bold text-navy-800 border-b border-slate-100 pb-2 flex items-center justify-between">
+        <span class="flex items-center">
+          <i class="fa-solid fa-pen-to-square text-amber-500 mr-2"></i> 참가자 정보 입력
+        </span>
+        <span class="text-xs text-red-500 font-normal">* 필수 입력</span>
+      </h2>
+
+      <!-- 1. Name -->
+      <div>
+        <label for="name" class="block text-xs font-semibold text-slate-700 mb-1">
+          참가자 이름 <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="name" required placeholder="홍길동"
+          class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:bg-white transition-all">
+      </div>
+
+      <!-- 2. Birth Date -->
+      <div>
+        <label for="birth" class="block text-xs font-semibold text-slate-700 mb-1">
+          생년월일 <span class="text-red-500">*</span>
+          <span class="text-slate-400 text-[11px] font-normal ml-1">(연도별 정렬 가능 서식)</span>
+        </label>
+        <input type="date" id="birth" required
+          class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:bg-white transition-all">
+      </div>
+
+      <!-- 3. Gender -->
+      <div>
+        <label class="block text-xs font-semibold text-slate-700 mb-1.5">
+          성별 <span class="text-red-500">*</span>
+        </label>
+        <div class="grid grid-cols-2 gap-3">
+          <label class="flex items-center justify-center p-2.5 border border-slate-200 rounded-xl bg-slate-50 cursor-pointer hover:bg-slate-100 has-[:checked]:bg-navy-800 has-[:checked]:text-white has-[:checked]:border-navy-800 transition-all text-sm font-medium">
+            <input type="radio" name="gender" value="남성" required class="sr-only">
+            <span>남성</span>
+          </label>
+          <label class="flex items-center justify-center p-2.5 border border-slate-200 rounded-xl bg-slate-50 cursor-pointer hover:bg-slate-100 has-[:checked]:bg-navy-800 has-[:checked]:text-white has-[:checked]:border-navy-800 transition-all text-sm font-medium">
+            <input type="radio" name="gender" value="여성" required class="sr-only">
+            <span>여성</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- 4. Phone -->
+      <div>
+        <label for="phone" class="block text-xs font-semibold text-slate-700 mb-1">
+          휴대전화번호 <span class="text-red-500">*</span>
+        </label>
+        <input type="tel" id="phone" required placeholder="010-0000-0000" maxlength="13" oninput="formatPhoneNumber(this)"
+          class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:bg-white transition-all">
+      </div>
+
+      <!-- 5. Church -->
+      <div>
+        <label for="church" class="block text-xs font-semibold text-slate-700 mb-1">
+          소속 교회 <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="church" required placeholder="예: 동신교회"
+          class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:bg-white transition-all">
+      </div>
+
+      <!-- 6. Denominations -->
+      <div>
+        <label for="denominations" class="block text-xs font-semibold text-slate-700 mb-1">
+          교단 <span class="text-red-500">*</span>
+        </label>
+        <input type="text" id="denominations" required placeholder="예: 기성, 예장통합, 기감 등"
+          class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:bg-white transition-all">
+      </div>
+
+      <!-- 7. Position -->
+      <div>
+        <label for="position" class="block text-xs font-semibold text-slate-700 mb-1">
+          직분 <span class="text-red-500">*</span>
+        </label>
+        <select id="position" required
+          class="w-full px-3.5 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-navy-500 focus:bg-white transition-all">
+          <option value="" disabled selected>선택해 주세요</option>
+          <option value="청년/학생">청년 / 학생</option>
+          <option value="교사">교사</option>
+          <option value="집사">집사</option>
+          <option value="권사">권사</option>
+          <option value="장로">장로</option>
+          <option value="전도사">전도사</option>
+          <option value="목사">목사</option>
+          <option value="기타">기타</option>
+        </select>
+      </div>
+
+      <hr class="border-slate-100">
+
+      <!-- Terms & Agreements -->
+      <div class="space-y-3 pt-1">
+        <label class="block text-xs font-semibold text-slate-700">
+          약관 동의 <span class="text-red-500">*</span>
+        </label>
+        
+        <div class="flex items-center p-3 bg-slate-50 rounded-xl border border-slate-200">
+          <input type="checkbox" id="checkAll" onchange="toggleAllTerms(this)" class="w-4 h-4 text-navy-800 rounded focus:ring-navy-500 border-slate-300">
+          <label for="checkAll" class="ml-2.5 text-xs font-bold text-slate-800 cursor-pointer">
+            약관 전체 동의하기
+          </label>
+        </div>
+
+        <div class="space-y-2 text-xs text-slate-600 pl-1">
+          <div class="flex items-start">
+            <input type="checkbox" id="term1" required class="term-check w-3.5 h-3.5 mt-0.5 text-navy-800 rounded border-slate-300 focus:ring-navy-500">
+            <label for="term1" class="ml-2 cursor-pointer leading-tight">
+              [필수] 등록 및 회비 정보 관련 사항 동의
+            </label>
+          </div>
+          <div class="flex items-start">
+            <input type="checkbox" id="term2" required class="term-check w-3.5 h-3.5 mt-0.5 text-navy-800 rounded border-slate-300 focus:ring-navy-500">
+            <label for="term2" class="ml-2 cursor-pointer leading-tight">
+              [필수] 캠프 환불규정 동의
+            </label>
+          </div>
+          <div class="flex items-start">
+            <input type="checkbox" id="term3" required class="term-check w-3.5 h-3.5 mt-0.5 text-navy-800 rounded border-slate-300 focus:ring-navy-500">
+            <label for="term3" class="ml-2 cursor-pointer leading-tight">
+              [필수] 개인정보 수집 및 활용 동의
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" id="submitBtn"
+        class="w-full py-3.5 px-4 bg-navy-800 hover:bg-navy-900 active:scale-[0.99] text-white font-bold text-base rounded-xl shadow-lg shadow-navy-800/30 transition-all duration-150 flex items-center justify-center space-x-2">
+        <span id="btnText">캠프 참가 신청하기</span>
+        <i id="btnSpinner" class="fa-solid fa-spinner fa-spin hidden"></i>
+      </button>
+    </form>
+  </main>
+
+  <!-- Complete Modal -->
+  <div id="completeModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-900/60 backdrop-blur-sm hidden opacity-0 transition-opacity duration-200">
+    <div id="modalContainer" class="bg-white rounded-2xl p-6 max-w-sm w-full shadow-2xl scale-95 transition-transform duration-200">
+      <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h3 class="text-lg font-bold text-center text-slate-800 mb-1">신청이 완료되었습니다!</h3>
+      <p class="text-xs text-center text-slate-500 mb-4">제23차 차세대리더십캠프에 정상 접수되었습니다.</p>
+      
+      <div id="summaryContent" class="bg-slate-50 rounded-xl p-3.5 text-xs text-slate-700 space-y-1.5 mb-5 border border-slate-100">
+        <!-- JS로 입력 내용 동적 채움 -->
+      </div>
+
+      <button type="button" onclick="closeModal()"
+        class="w-full py-3 bg-navy-800 text-white font-bold text-sm rounded-xl hover:bg-navy-900 transition-colors">
+        확인
+      </button>
     </div>
+  </div>
 
-    <script>
-        // 1. Phone number auto hyphen format (010-XXXX-XXXX)
-        document.getElementById('userPhone').addEventListener('input', function(e) {
-            let val = e.target.value.replace(/\D/g, '');
-            if (val.length > 3 && val.length <= 7) {
-                val = val.substring(0, 3) + '-' + val.substring(3);
-            } else if (val.length > 7) {
-                val = val.substring(0, 3) + '-' + val.substring(3, 7) + '-' + val.substring(7, 11);
-            }
-            e.target.value = val;
-        });
+  <script>
+    // 💡 발급받으신 구글 앱스 스크립트 웹 앱 URL 반영 완료
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyQ9WHo4DZT8UVtauOYwo3y9Gpi39p8idQFuywmp-AChM_BvHXDAW_Rqj7itYTJ11NH/exec';
 
-        // 2. Address Copy Function
-        function copyAddress() {
-            const addressText = document.getElementById('campAddress').innerText;
-            
-            // Clipboard API fallback for standard frame environment
-            const dummy = document.createElement('textarea');
-            document.body.appendChild(dummy);
-            dummy.value = addressText;
-            dummy.select();
-            document.execCommand('copy');
-            document.body.removeChild(dummy);
+    // Phone format (010-0000-0000)
+    function formatPhoneNumber(input) {
+      let value = input.value.replace(/[^0-9]/g, '');
+      if (value.length > 3 && value.length <= 7) {
+        value = value.slice(0, 3) + '-' + value.slice(3);
+      } else if (value.length > 7) {
+        value = value.slice(0, 3) + '-' + value.slice(3, 7) + '-' + value.slice(7, 11);
+      }
+      input.value = value;
+    }
 
-            showToast('주소가 클립보드에 복사되었습니다!');
+    // Address Copy
+    function copyAddress() {
+      const address = "경기도 양주시 은현면 화합로 1094번길 232";
+      navigator.clipboard.writeText(address).then(() => {
+        alert("주소가 클립보드에 복사되었습니다.");
+      });
+    }
+
+    // Toggle All Terms
+    function toggleAllTerms(mainCheckbox) {
+      const checkboxes = document.querySelectorAll('.term-check');
+      checkboxes.forEach(cb => cb.checked = mainCheckbox.checked);
+    }
+
+    // Form Submission & Data Sending
+    async function handleFormSubmit(e) {
+      e.preventDefault();
+
+      const btn = document.getElementById('submitBtn');
+      const btnText = document.getElementById('btnText');
+      const btnSpinner = document.getElementById('btnSpinner');
+
+      const formData = {
+        name: document.getElementById('name').value,
+        birth: document.getElementById('birth').value,
+        gender: document.querySelector('input[name="gender"]:checked')?.value || '',
+        phone: document.getElementById('phone').value,
+        church: document.getElementById('church').value,
+        denominations: document.getElementById('denominations').value,
+        position: document.getElementById('position').value
+      };
+
+      // Loading UI State
+      btn.disabled = true;
+      btnText.textContent = "신청서 전송 중...";
+      btnSpinner.classList.remove('hidden');
+
+      try {
+        if (GOOGLE_SCRIPT_URL) {
+          await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(formData)
+          });
         }
+      } catch (err) {
+        console.error("전송 오류:", err);
+      } finally {
+        // Reset UI State
+        btn.disabled = false;
+        btnText.textContent = "캠프 참가 신청하기";
+        btnSpinner.classList.add('hidden');
+      }
 
-        function showToast(message) {
-            const toast = document.getElementById('toast');
-            document.getElementById('toastMsg').innerText = message;
-            toast.classList.remove('opacity-0', 'pointer-events-none');
-            toast.classList.add('opacity-100');
-            setTimeout(() => {
-                toast.classList.remove('opacity-100');
-                toast.classList.add('opacity-0', 'pointer-events-none');
-            }, 2500);
-        }
+      // Show Summary Content
+      const summaryHTML = `
+        <div class="flex justify-between"><span class="text-slate-400">이름:</span><span class="font-semibold">${formData.name}</span></div>
+        <div class="flex justify-between"><span class="text-slate-400">생년월일:</span><span>${formData.birth}</span></div>
+        <div class="flex justify-between"><span class="text-slate-400">성별:</span><span>${formData.gender}</span></div>
+        <div class="flex justify-between"><span class="text-slate-400">연락처:</span><span>${formData.phone}</span></div>
+        <div class="flex justify-between"><span class="text-slate-400">소속교회:</span><span>${formData.church}</span></div>
+        <div class="flex justify-between"><span class="text-slate-400">교단/직분:</span><span>${formData.denominations} / ${formData.position}</span></div>
+      `;
+      document.getElementById('summaryContent').innerHTML = summaryHTML;
 
-        // 3. Terms Agreement Checkbox Logic
-        function toggleAllTerms(source) {
-            const checkboxes = document.querySelectorAll('input[name="terms"]');
-            checkboxes.forEach(cb => cb.checked = source.checked);
-        }
+      // Show Modal with Animation
+      const modal = document.getElementById('completeModal');
+      const container = document.getElementById('modalContainer');
+      modal.classList.remove('hidden');
+      setTimeout(() => {
+        modal.classList.remove('opacity-0');
+        container.classList.remove('scale-95');
+        container.classList.add('scale-100');
+      }, 10);
+    }
 
-        function updateAllCheckState() {
-            const checkboxes = document.querySelectorAll('input[name="terms"]');
-            const checkAll = document.getElementById('checkAll');
-            const allChecked = Array.from(checkboxes).every(cb => cb.checked);
-            checkAll.checked = allChecked;
-        }
+    // Close Modal & Reset Form
+    function closeModal() {
+      const modal = document.getElementById('completeModal');
+      const container = document.getElementById('modalContainer');
+      modal.classList.add('opacity-0');
+      container.classList.remove('scale-100');
+      container.classList.add('scale-95');
 
-        // 4. Form Submit Handler & Modal Popup
-        function handleFormSubmit(e) {
-            e.preventDefault();
-
-            const name = document.getElementById('userName').value;
-            const birth = document.getElementById('userBirth').value;
-            const genderEl = document.querySelector('input[name="gender"]:checked');
-            const gender = genderEl ? genderEl.value : '-';
-            const phone = document.getElementById('userPhone').value;
-            const church = document.getElementById('userChurch').value;
-            const denomination = document.getElementById('userDenomination').value;
-            const role = document.getElementById('userRole').value;
-
-            // Generate Summary HTML
-            const summaryHTML = `
-                <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
-                    <span class="text-slate-500">참가자 이름</span>
-                    <span class="font-bold text-slate-800">${name}</span>
-                </div>
-                <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
-                    <span class="text-slate-500">생년월일 (셀정렬용)</span>
-                    <span class="font-bold text-slate-800">${birth}</span>
-                </div>
-                <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
-                    <span class="text-slate-500">성별</span>
-                    <span class="font-bold text-slate-800">${gender}</span>
-                </div>
-                <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
-                    <span class="text-slate-500">휴대전화번호</span>
-                    <span class="font-bold text-slate-800">${phone}</span>
-                </div>
-                <div class="flex justify-between border-b border-slate-200/60 pb-1.5">
-                    <span class="text-slate-500">소속 교회 / 교단</span>
-                    <span class="font-bold text-slate-800">${church} (${denomination})</span>
-                </div>
-                <div class="flex justify-between">
-                    <span class="text-slate-500">직분</span>
-                    <span class="font-bold text-amber-600">${role}</span>
-                </div>
-            `;
-
-            document.getElementById('summaryContent').innerHTML = summaryHTML;
-
-            // Show Modal with Animation
-            const modal = document.getElementById('completeModal');
-            const container = document.getElementById('modalContainer');
-            modal.classList.remove('hidden');
-            setTimeout(() => {
-                modal.classList.remove('opacity-0');
-                container.classList.remove('scale-95');
-                container.classList.add('scale-100');
-            }, 10);
-        }
-
-        // 5. Close Modal & Reset Form
-        function closeModal() {
-            const modal = document.getElementById('completeModal');
-            const container = document.getElementById('modalContainer');
-            modal.classList.add('opacity-0');
-            container.classList.remove('scale-100');
-            container.classList.add('scale-95');
-
-            setTimeout(() => {
-                modal.classList.add('hidden');
-                document.getElementById('campRegistrationForm').reset();
-                document.getElementById('checkAll').checked = false;
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }, 300);
-        }
-    </script>
+      setTimeout(() => {
+        modal.classList.add('hidden');
+        document.getElementById('campRegistrationForm').reset();
+        document.getElementById('checkAll').checked = false;
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, 300);
+    }
+  </script>
 </body>
 </html>
